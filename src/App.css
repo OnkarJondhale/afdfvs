@@ -1,0 +1,39 @@
+@keyframes bgChange {
+    0% {
+        background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    25% {
+        background: linear-gradient(45deg, rgba(36,0,2,1) 0%, rgba(121,9,9,1) 35%, rgba(255,0,212,1) 100%);
+    }
+    50% {
+        background: linear-gradient(45deg, rgba(2,36,0,1) 0%, rgba(121,121,9,1) 35%, rgba(255,212,0,1) 100%);
+    }
+    75% {
+        background: linear-gradient(45deg, rgba(36,0,36,1) 0%, rgba(121,9,121,1) 35%, rgba(255,0,255,1) 100%);
+    }
+    100% {
+        background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+}
+
+.animate-bgChange {
+    animation: bgChange 20s linear infinite , textColorChange 20s linear infinite;
+}
+
+@keyframes textColorChange {
+    0% {
+        color: #ffffff; /* White */
+    }
+    25% {
+        color: #ffcc00; /* Yellow */
+    }
+    50% {
+        color: #ff6600; /* Orange */
+    }
+    75% {
+        color: #ff0000; /* Red */
+    }
+    100% {
+        color: #ffffff; /* Back to White */
+    }
+}
